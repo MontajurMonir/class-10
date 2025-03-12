@@ -11,6 +11,9 @@ a{
 ul,ol{
     list-style-type: none;
 }
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
 .container{
     width: 1320px;
     margin: 0 auto;
@@ -21,10 +24,14 @@ ul,ol{
 /* Header part start  */
 #headerpart{
     padding: 30px 0;
-    background:#636363;
-   
-    
+    /* background:#636363; */
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+  
 }
+
 .headercontent{
     display: flex;
     justify-content: space-between;
@@ -69,3 +76,108 @@ ul,ol{
     color: #ffa415;
 }
 /* Header part End  */
+
+/* banner part start  */
+
+#bannerpart{
+
+    background:url(../img/slider-2-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#bannerpart .overly{
+    padding-top: 270px;
+    padding-bottom: 230px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.bannerText h1{
+    color: #fff;
+   
+    font-size: 65px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    width: 612px;
+    line-height: 68px;
+
+}
+.bannerText span{
+    color: #ffa415;
+    /* border-bottom: 5px solid #ffa415; */
+    position: relative;
+}
+.bannerText span::before{
+    height: 5px;
+    width: 86%;
+    background-color: #ffa415;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 13px;
+
+
+
+}
+/* .joinbutton{
+   
+    width: 120px;
+    background-color: #ffa415;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+} */
+.bannerText a{
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    background-color: #ffa415;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 1px solid #ffa415;
+    transition: .4s;
+    
+
+}
+.bannerText a:hover{
+    background: transparent;
+    border: 1px solid saddlebrown;
+    
+}
+#donationpart{
+    padding-bottom: 140px;
+    background-color: #fff;
+}
+.donationFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.donationItem{
+    width: 30%;
+    /* height: 330px; */
+    /* background-color: rebeccapurple; */
+    /*  */
+    position: relative;
+}
+.donationImg img{
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+.donationbox1{
+    width: 83%;
+    
+    background-color: rgb(165, 74, 177);
+    border-radius: 58px;
+    padding: 30px 35px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+
+}
+
+
+/* banner part end  */
